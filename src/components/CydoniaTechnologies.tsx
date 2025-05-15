@@ -60,9 +60,9 @@ export default function CydoniaTechnologies() {
               Educational Content, and Entertainment using AI and Embedded Systems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
+              <a href="https://github.com/Cydonia-Technologies" target="_blank"><button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
                 Explore Projects
-              </button>
+              </button></a>
               <button className="flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">
                 <Youtube className="w-5 h-5" />
                 Watch Our Process
@@ -252,10 +252,10 @@ export default function CydoniaTechnologies() {
               <button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
                 Contact Us
               </button>
-              <button className="flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">
+              <a href="https://github.com/Cydonia-Technologies" target="_blank"><button className="flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">
                 <Github className="w-5 h-5" />
                 GitHub
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
