@@ -86,7 +86,7 @@ export default function CydoniaTechnologies() {
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Mission</h3>
               <p className="text-slate-600 mb-6">
                 Cydonia Technologies LLC is dedicated to creating, producing, and distributing innovative
-                open source and DIY projects that push the boundaries of what's possible in music,
+                open source and DIY projects that push the boundaries of what&apos;s possible in music,
                 education, and entertainment.
               </p>
               <p className="text-slate-600">
@@ -246,7 +246,7 @@ export default function CydoniaTechnologies() {
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Get In Touch</h2>
             <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-              Interested in collaborating or learning more about our projects? We'd love to hear from you.
+              Interested in collaborating or learning more about our projects? We&apos;d love to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
