@@ -130,8 +130,7 @@ export default function CydoniaTechnologies() {
               <Music className="w-16 h-16 text-purple-600 mb-6" />
               <h3 className="text-xl font-bold text-slate-900 mb-4">Music Performance & Production</h3>
               <p className="text-slate-600">
-                Innovative tools and systems that enhance musical creativity, from AI-assisted composition
-                to embedded performance controllers that respond to musicians' needs.
+              Innovative embedded solutions for live music performers and studio recoreders alike
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
@@ -169,7 +168,7 @@ export default function CydoniaTechnologies() {
               <div className="h-48 bg-gradient-to-br from-teal-100 to-teal-200"></div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Project Alpha</h3>
-                <p className="text-slate-600 mb-4">AI-powered music collaboration platform for remote musicians.</p>
+                <p className="text-slate-600 mb-4">To be announced!</p>
                 <div className="flex gap-3">
                   <button className="flex items-center gap-2 text-sm text-teal-600 hover:text-teal-700">
                     <Github className="w-4 h-4" />
@@ -183,41 +182,43 @@ export default function CydoniaTechnologies() {
               </div>
             </div>
 
-            <div className="border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-purple-100 to-purple-200"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">EduBot System</h3>
-                <p className="text-slate-600 mb-4">Interactive learning companion with embedded sensors.</p>
-                <div className="flex gap-3">
-                  <button className="flex items-center gap-2 text-sm text-teal-600 hover:text-teal-700">
-                    <Github className="w-4 h-4" />
-                    View Code
-                  </button>
-                  <button className="flex items-center gap-2 text-sm text-red-600 hover:text-red-700">
-                    <Play className="w-4 h-4" />
-                    Demo
-                  </button>
-                </div>
-              </div>
-            </div>
+            { /**
+           * <div className="border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+           *   <div className="h-48 bg-gradient-to-br from-purple-100 to-purple-200"></div>
+           *   <div className="p-6">
+           *     <h3 className="text-xl font-bold text-slate-900 mb-2">EduBot System</h3>
+           *     <p className="text-slate-600 mb-4">Interactive learning companion with embedded sensors.</p>
+           *     <div className="flex gap-3">
+           *       <button className="flex items-center gap-2 text-sm text-teal-600 hover:text-teal-700">
+           *         <Github className="w-4 h-4" />
+           *         View Code
+           *       </button>
+           *       <button className="flex items-center gap-2 text-sm text-red-600 hover:text-red-700">
+           *         <Play className="w-4 h-4" />
+           *         Demo
+           *       </button>
+           *     </div>
+           *   </div>
+           * </div>
 
-            <div className="border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-gradient-to-br from-green-100 to-green-200"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Smart Stage Kit</h3>
-                <p className="text-slate-600 mb-4">Modular performance enhancement system for live entertainment.</p>
-                <div className="flex gap-3">
-                  <button className="flex items-center gap-2 text-sm text-teal-600 hover:text-teal-700">
-                    <Github className="w-4 h-4" />
-                    View Code
-                  </button>
-                  <button className="flex items-center gap-2 text-sm text-red-600 hover:text-red-700">
-                    <Play className="w-4 h-4" />
-                    Demo
-                  </button>
-                </div>
-              </div>
-            </div>
+           * <div className="border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+           *   <div className="h-48 bg-gradient-to-br from-green-100 to-green-200"></div>
+           *   <div className="p-6">
+           *     <h3 className="text-xl font-bold text-slate-900 mb-2">Smart Stage Kit</h3>
+           *     <p className="text-slate-600 mb-4">Modular performance enhancement system for live entertainment.</p>
+           *     <div className="flex gap-3">
+           *       <button className="flex items-center gap-2 text-sm text-teal-600 hover:text-teal-700">
+           *         <Github className="w-4 h-4" />
+           *         View Code
+           *       </button>
+           *       <button className="flex items-center gap-2 text-sm text-red-600 hover:text-red-700">
+           *         <Play className="w-4 h-4" />
+           *         Demo
+           *       </button>
+           *     </div>
+           *   </div>
+           * </div>
+           */}
           </div>
         </div>
       </section>
