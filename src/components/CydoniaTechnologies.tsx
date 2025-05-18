@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Github, Youtube, Music, BookOpen, Gamepad2, Cpu, CircuitBoard} from 'lucide-react';
+import { GithubIcon, LinkedinIcon, Play, Github, Youtube, Music, BookOpen, Gamepad2, Cpu, CircuitBoard} from 'lucide-react';
 import Image from 'next/image'
 
 interface LogoProps {
@@ -60,13 +60,18 @@ export default function CydoniaTechnologies() {
               Educational Content, and Entertainment using AI and Embedded Systems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://github.com/Cydonia-Technologies" target="_blank"><button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
-                Explore Projects
+              <a href="https://github.com/Cydonia-Technologies" target="_blank"><button className="flex bg-red-500 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-red-600 transition-colors">
+              <GithubIcon className="w-6 h-6" />
+               &nbsp;Explore Projects
               </button></a>
-              <button className="flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">
-                <Youtube className="w-5 h-5" />
+              <a href=" https://www.youtube.com/@CydoniaTechnologies" target="_blank"> <button className="bg-slate-50 flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors">
+               <Youtube className="w-5 h-5" />
                 Watch Our Process
-              </button>
+              </button></a>
+              <a href = "https://www.linkedin.com/company/cydonia-technologies-llc/about/?viewAsMember=true" target="_blank"><button className="bg-teal-600 text-white flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
+                <LinkedinIcon className="w-5 h-5" />
+              Discover Us
+              </button></a>
             </div>
           </div>
         </div>
@@ -233,9 +238,9 @@ export default function CydoniaTechnologies() {
               Watch our development process, tutorials, and behind-the-scenes content on our YouTube channel.
               See how our projects come to life from concept to completion.
             </p>
-            <button className="bg-red-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors">
+            <a href="https://www.youtube.com/@CydoniaTechnologies" target="_blank"><button className="bg-red-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors">
               Subscribe to Our Channel
-            </button>
+            </button></a>
           </div>
         </div>
       </section>
