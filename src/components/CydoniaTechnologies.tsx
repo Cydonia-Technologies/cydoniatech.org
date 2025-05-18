@@ -257,6 +257,10 @@ export default function CydoniaTechnologies() {
               <button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
                 Contact Us
               </button>
+              <a href="hhttps://www.linkedin.com/company/cydonia-technologies-llc/about" target="_blank"><button className="flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">
+                <LinkedinIcon className="w-5 h-5" />
+              Linkedin
+              </button></a>
               <a href="https://github.com/Cydonia-Technologies" target="_blank"><button className="flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">
                 <Github className="w-5 h-5" />
                 GitHub
