@@ -237,9 +237,6 @@ export default function CydoniaTechnologies() {
               Interested in collaborating or learning more about our projects? We&apos;d love to hear from you.
             </p>
             <div className="flex flex-col space-y-8 sm:flex-row gap-4 justify-center">
-              <button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
-                Contact Us
-              </button>
               <a href="https://www.linkedin.com/company/cydonia-technologies-llc/?viewAsMember=true" target="_blank"><button className="flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-50 transition-colors">
                 <LinkedinIcon className="w-5 h-5" />
               LinkedIn
@@ -249,17 +246,17 @@ export default function CydoniaTechnologies() {
                 GitHub
               </button></a>
             </div>
-            <div className="flex flex-col space-y-4 sm:flex-row gap-2 justify-center">
-              <form id="email-form"  className="bg-slate-50 flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors">
+            <div className="flex flex-box flex-col sm:flex-row gap-4 justify-center">
+              <form id="email-form"  className="bg-slate-50 flex items-center justify-center  border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors">
                 <div className="space-x-4" >
-                     <input className="flex flex-col space-y-4 border-style:solid" type="text" name="from_name" placeholder="Your Name" required/>
-                     <input className="flex flex-col space-y-4" type="text" name="from_email" placeholder="Your Email" required/>
+                     <input className="flex flex-col border-b border-slate-400" type="text" name="from_name" placeholder="Your Name" required/>
+                     <input className="flex flex-col border-b border-slate-400" type="text" name="from_email" placeholder="Your Email" required/>
                 </div>
-                <textarea className="flex flex-col space-x-4 space-y-4" name="message" placeholder="Your Message" required ></textarea>
-                <button className="space-x-4 bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
-                Contact Us
-                </button>
+                <textarea className="flex flex-row flex-col space-x-4 border-b border-slate-400 text-justify" name="message" placeholder="Your Message" required ></textarea>
               </form>
+              <button className=" bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
+                Contact Us
+              </button>
             </div>
           </div>
         </div>
