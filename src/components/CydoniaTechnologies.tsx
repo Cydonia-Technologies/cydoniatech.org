@@ -1,25 +1,8 @@
 import React from 'react';
 import { GithubIcon, LinkedinIcon, Play, Github, Youtube, Music, BookOpen, Gamepad2, Cpu, CircuitBoard} from 'lucide-react';
-import Image from 'next/image'
+import Logo from '@/components/Logo';
 
-interface LogoProps {
-    width?: number;
-    height?: number;
-    className?: string;
-}
 
-export function Logo({ width = 200, height = 200, className = "" }: LogoProps) {
-    return (
-        <Image
-            src="/logo_transparent.png"
-            alt="Cydonia Tech Logo"
-            width={width}
-            height={height}
-            className={className}
-            priority
-        />
-    );
-}
 export default function CydoniaTechnologies() {
   return (
     <div className="min-h-screen bg-white">
@@ -48,8 +31,8 @@ export default function CydoniaTechnologies() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-8">
-              <div className="w-64 h-64 mx-auto mb-6 bg-slate-100 rounded-lg flex items-center justify-center">
-                <Logo className="w-64 h-64 text-teal-600" />
+              <div className="w-112 h-112 mx-auto mb-6 rounded-lg flex items-center justify-center">
+                <Logo className="w-112 h-112 text-teal-600" />
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">

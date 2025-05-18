@@ -4,6 +4,7 @@ interface LogoProps {
     width?: number;
     height?: number;
     className?: string;
+    opacity?: number;
 }
 
 export default function Logo({ width = 200, height = 200, className = "" }: LogoProps) {
