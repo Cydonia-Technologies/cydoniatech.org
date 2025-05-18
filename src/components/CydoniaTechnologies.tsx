@@ -252,7 +252,7 @@ export default function CydoniaTechnologies() {
                      <input className="flex flex-col border-b border-slate-400" type="text" name="from_name" placeholder="Your Name" required/>
                      <input className="flex flex-col border-b border-slate-400" type="text" name="from_email" placeholder="Your Email" required/>
                 </div>
-                <textarea className="flex flex-row flex-col space-x-4 border-b border-slate-400 text-justify" name="message" placeholder="Your Message" required ></textarea>
+                <textarea className="textarea-bottom  w-full border-b border-slate-400 self-end" style={{verticalAlign:'text-bottom'}}  name="message" placeholder="Your Message" required ></textarea>
               </form>
               <button className=" bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
                 Contact Us
