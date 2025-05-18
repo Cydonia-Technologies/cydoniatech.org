@@ -236,7 +236,7 @@ export default function CydoniaTechnologies() {
             <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
               Interested in collaborating or learning more about our projects? We&apos;d love to hear from you.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col space-y-8 sm:flex-row gap-4 justify-center">
               <button className="bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
                 Contact Us
               </button>
@@ -248,6 +248,18 @@ export default function CydoniaTechnologies() {
                 <Github className="w-5 h-5" />
                 GitHub
               </button></a>
+            </div>
+            <div className="flex flex-col space-y-4 sm:flex-row gap-2 justify-center">
+              <form id="email-form"  className="bg-slate-50 flex items-center justify-center gap-2 border border-slate-300 text-slate-700 px-8 py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors">
+                <div className="space-x-4" >
+                     <input className="flex flex-col space-y-4 border-style:solid" type="text" name="from_name" placeholder="Your Name" required/>
+                     <input className="flex flex-col space-y-4" type="text" name="from_email" placeholder="Your Email" required/>
+                </div>
+                <textarea className="flex flex-col space-x-4 space-y-4" name="message" placeholder="Your Message" required ></textarea>
+                <button className="space-x-4 bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
+                Contact Us
+                </button>
+              </form>
             </div>
           </div>
         </div>
