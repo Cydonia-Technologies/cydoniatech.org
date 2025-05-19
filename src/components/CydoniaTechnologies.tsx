@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import { GithubIcon, LinkedinIcon, Play, Github, Youtube, Music, BookOpen, Gamepad2, Cpu, CircuitBoard, Menu, X } from 'lucide-react';
 import Logo from '@/components/Logo';
+import Script from 'next/script';
 
 export default function CydoniaTechnologies() {
   // Add state for mobile menu
@@ -328,6 +329,7 @@ export default function CydoniaTechnologies() {
               <button className="w-full sm:w-auto bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
                 Contact Us
               </button>
+              <Script  src="@/components/SendEmail.tsx"></Script>
             </div>
           </div>
         </div>
