@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import { GithubIcon, LinkedinIcon, Play, Github, Youtube, Music, BookOpen, Gamepad2, Cpu, CircuitBoard, Menu, X } from 'lucide-react';
 import Logo from '@/components/Logo';
-import '@/components/SendEmail.tsx';
+import ContactForm from '@/components/SendEmail';
 
 export default function CydoniaTechnologies() {
   // Add state for mobile menu
@@ -296,41 +296,8 @@ export default function CydoniaTechnologies() {
               </a>
             </div>
             <div className="max-w-lg mx-auto">
-              <form id="email-form" className="mb-4">
-                <div className="mb-4 grid gap-4 sm:grid-cols-2">
-                  <input
-                    className="w-full px-4 py-2 border text-slate-700 border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                  />
-                  <input
-                    className="w-full px-4 py-2 border text-slate-700 border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    required
-                  />
-                </div>
-                <input
-                  className="mb-4 grid gap-4 sm:grid-cols-2 w-full px-4 py-2 border text-slate-700 border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 "
-                  name="title"
-                  placeholder="Your Title"
-                  required
-                ></input>
-                <textarea
-                  className="w-full gap-4 mb-4 px-4 py-2 border text-slate-700 border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 min-h-32"
-                  name="message"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-                <button
-                  type="submit"
-                  className="w-full gap-4 px-4 py-2 sm:w-auto bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
-                  Contact Us
-                </button>
-              </form>
+              <ContactForm id="email-form" className="mb-4">
+              </ContactForm>
             </div>
           </div>
         </div>

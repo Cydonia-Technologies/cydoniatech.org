@@ -14,7 +14,13 @@ if (MAIL_JS_KEY) {
   emailjs.init(MAIL_JS_KEY);
 }
 
-export default function ContactForm() {
+interface ContactFormProps {
+    children?: React.ReactNode;
+    id?: string;
+    className?: string;
+}
+
+export default function ContactForm( {children, id="email-form", className="mb-4"} : ContactFormProps)  {
   // Form state
   const [formData, setFormData] = useState({
     name: '',
@@ -83,7 +89,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <form id="email-form" className="mb-4" onSubmit={handleSubmit}>
+      <form id={id || "email=form"} className={className || "mb-4"}  onSubmit={handleSubmit}>
         <div className="mb-4 grid gap-4 sm:grid-cols-2">
           <input
             className="w-full px-4 py-2 border text-slate-700 border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
@@ -120,6 +126,7 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
         />
+        {children}
         <button
           type="submit"
           disabled={isSubmitting}
