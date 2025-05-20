@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, FormEvent } from 'react';
+import { useState, useEffect, FormEvent } from 'react';
 import emailjs from "@emailjs/browser";
 
 // Environment variables
@@ -9,10 +9,6 @@ const MAIL_JS_KEY = process.env.NEXT_PUBLIC_MAIL_JS_KEY;
 const MAIL_SERVICE_ID = process.env.NEXT_PUBLIC_MAIL_SERVICE_ID;
 const TEMPLATE_ID = "template_pwxbfqm"; // Template ID for the "Contact US" Template
 
-// Initialize EmailJS
-if (MAIL_JS_KEY) {
-  emailjs.init(MAIL_JS_KEY);
-}
 
 interface ContactFormProps {
     children?: React.ReactNode;
@@ -21,6 +17,14 @@ interface ContactFormProps {
 }
 
 export default function ContactForm( {children, id="email-form", className="mb-4"} : ContactFormProps)  {
+  // Initialize EmailJS once when component mounts
+  useEffect(() => {
+      // Initialize EmailJS
+    if (MAIL_JS_KEY) {
+      emailjs.init(MAIL_JS_KEY);
+    }
+  }, []);   // Empty dependency array menas this runs once on mount
+
   // Form state
   const [formData, setFormData] = useState({
     name: '',
