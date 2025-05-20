@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import { GithubIcon, LinkedinIcon, Play, Github, Youtube, Music, BookOpen, Gamepad2, Cpu, CircuitBoard, Menu, X } from 'lucide-react';
 import Logo from '@/components/Logo';
-import Script from 'next/script';
+import '@/components/SendEmail.tsx';
 
 export default function CydoniaTechnologies() {
   // Add state for mobile menu
@@ -301,14 +301,14 @@ export default function CydoniaTechnologies() {
                   <input
                     className="w-full px-4 py-2 border text-slate-700 border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                     type="text"
-                    name="from_name"
+                    name="name"
                     placeholder="Your Name"
                     required
                   />
                   <input
                     className="w-full px-4 py-2 border text-slate-700 border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                     type="email"
-                    name="from_email"
+                    name="email"
                     placeholder="Your Email"
                     required
                   />
@@ -320,16 +320,17 @@ export default function CydoniaTechnologies() {
                   required
                 ></input>
                 <textarea
-                  className="w-full px-4 py-2 border text-slate-700 border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 min-h-32"
+                  className="w-full gap-4 mb-4 px-4 py-2 border text-slate-700 border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 min-h-32"
                   name="message"
                   placeholder="Your Message"
                   required
                 ></textarea>
+                <button
+                  type="submit"
+                  className="w-full gap-4 px-4 py-2 sm:w-auto bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
+                  Contact Us
+                </button>
               </form>
-              <button className="w-full sm:w-auto bg-teal-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-teal-700 transition-colors">
-                Contact Us
-              </button>
-              <Script  src="@/components/SendEmail.tsx"></Script>
             </div>
           </div>
         </div>
